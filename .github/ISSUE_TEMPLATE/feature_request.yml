@@ -1,0 +1,24 @@
+name: Feature proposal
+description: Suggest a capability or improvement when proposals are accepted.
+title: "feat: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: Explain the user or technical need, not just the proposed implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed direction
+      description: Outline desired behavior and major constraints.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives, risks and trade-offs
+      description: Mention alternatives considered and any compatibility or security considerations.
