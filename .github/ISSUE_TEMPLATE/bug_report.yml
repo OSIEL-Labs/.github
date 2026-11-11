@@ -1,0 +1,32 @@
+name: Bug report
+description: Report a reproducible problem in a repository that accepts bug reports.
+title: "bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not submit vulnerabilities or private data here. Follow SECURITY.md for sensitive reports."
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem description
+      description: What happened and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Provide minimal, reliable reproduction steps.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version / commit / environment
+      placeholder: "Version, operating system, runtime"
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs and supporting details
+      description: Remove credentials and identifying information before sharing.
